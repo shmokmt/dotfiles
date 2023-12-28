@@ -1,0 +1,14 @@
+name: Test
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mitamae
+        run: ./bin/setup.sh
+      - name: Run mitamae
+        run: ./bin/mitamae local recipes/darwin.rb
