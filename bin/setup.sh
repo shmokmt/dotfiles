@@ -17,6 +17,9 @@ case "$(uname)/$(uname -m)" in
  "Darwin/arm64")
     mitamae_bin="mitamae-aarch64-darwin"
     ;;
+ "Darwin/x86_64")
+    mitamae_bin="mitamae-x86_64-darwin"
+    ;;
   *)
     echo "unexpected uname: $(uname)/$(uname -m)"
     exit 1
