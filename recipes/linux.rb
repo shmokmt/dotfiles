@@ -1,5 +1,9 @@
 package 'vim'
-package 'peco'
+# NOTE: Amazon Linux 2023だとパッケージでインストールできない
+# package 'peco'
+
+# NOTE: Amazon Linux 2023だとtarが必要
+package 'tar'
 package 'zsh'
 package 'git'
 execute "curl -sS https://starship.rs/install.sh | sh -s -- --yes"
