@@ -18,7 +18,7 @@ case "$(uname)/$(uname -m)" in
     mitamae_bin="mitamae-aarch64-darwin"
     ;;
   *)
-    echo "unexpected uname: $(uname)"
+    echo "unexpected uname: $(uname)/$(uname -m)"
     exit 1
     ;;
 esac
