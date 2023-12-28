@@ -12,6 +12,6 @@ package 'trivy'
 package 'nodenv'
 package 'ghq'
 package 'gh'
-package 'mutagen'
-package 'mutagen-compose'
+execute "brew install mutagen-io/mutagen/mutagen"
+execute "brew install mutagen-io/mutagen/mutagen-compose"
 package 'yamlfmt'
